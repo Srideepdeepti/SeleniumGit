@@ -4,5 +4,7 @@ node{
   {
 
     git "https://github.com/Srideepdeepti/SeleniumGit"
+    
+    sh mvn -f pom.xml
   }
 }
