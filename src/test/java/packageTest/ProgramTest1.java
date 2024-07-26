@@ -28,6 +28,8 @@ public class ProgramTest1 {
 	   System.out.println(" The current title is ::"+actualTitle);
 	  
 	  Assert.assertEquals(actualTitle, expectedTitle);
+	  
+	  //one more assertion is added
 	  Assert.assertEquals(false, false);
 		
 	}
