@@ -1,10 +1,18 @@
 node{
 
-  stage('SCM Checkout')
-  {
-
-    git "https://github.com/Srideepdeepti/SeleniumGit"
+  stage('Build')
+  {  
+    echo "Hello build"
     
-    sh mvn -f pom.xml
+  }
+
+   stage('Test')
+  {
+    echo "Hello Test"
+  }
+
+   stage('Deploy')
+  {
+    echo "Hello Deploy"
   }
 }
