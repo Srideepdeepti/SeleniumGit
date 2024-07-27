@@ -1,6 +1,8 @@
 package packageTest;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -34,6 +36,17 @@ public class ProgramTest1 {
 		
 	}
 	
+	
+	@Test
+	public void verifyLogoDisplayingStatus()
+	{
+       
+		
+		WebElement logo = driver.findElement(By.xpath("//a[@id='nav-logo-sprites']"));
+        
+	    Assert.assertTrue(logo.isDisplayed());
+		
+	}
 	@AfterMethod
 	public void teardown()
 	{   
