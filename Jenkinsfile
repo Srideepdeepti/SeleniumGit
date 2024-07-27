@@ -27,5 +27,16 @@ pipeline {
 
          
              }
+             
+             stage('Email') {
+            steps {
+                                
+                //sending Email
+                emailext body: 'Build is passed.', subject: 'Build Status', to: 'srideep.deepti@gmail.com'
+                 
+               }
+
+         
+             }
     }
 }
