@@ -45,9 +45,7 @@ public class ProgramTest1 {
 		WebElement logo = driver.findElement(By.xpath("//a[@id='nav-logo-sprites']"));
         
 	    Assert.assertTrue(logo.isDisplayed());
-	    // Added New Code
-	    //Assert.assertTrue(logo.isEnabled());
-		
+	   
 	}
 	@AfterMethod
 	public void teardown()
