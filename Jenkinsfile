@@ -28,7 +28,7 @@ pipeline {
          
              }
              
-             stage('Email') {
+        stage('Email.') {
             steps {
                                 
                 //sending Email
