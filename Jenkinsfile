@@ -13,8 +13,7 @@ pipeline {
                 git 'https://github.com/Srideepdeepti/SeleniumGit.git'
 
                 
-                // To run Maven on a Windows agent, use
-                 bat "mvn test"
+                
                  
                  }
               } 
